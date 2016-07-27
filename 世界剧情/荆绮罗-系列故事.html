@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>荆绮罗-系列故事</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<style type="text/css">
+.highlight  { background: #ffffff; }
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .o { font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kp { font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d14 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d14 } /* Literal.String.Backtick */
+.highlight .sc { color: #d14 } /* Literal.String.Char */
+.highlight .sd { color: #d14 } /* Literal.String.Doc */
+.highlight .s2 { color: #d14 } /* Literal.String.Double */
+.highlight .se { color: #d14 } /* Literal.String.Escape */
+.highlight .sh { color: #d14 } /* Literal.String.Heredoc */
+.highlight .si { color: #d14 } /* Literal.String.Interpol */
+.highlight .sx { color: #d14 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d14 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+.pl-c {
+    color: #969896;
+}
+
+.pl-c1,.pl-mdh,.pl-mm,.pl-mp,.pl-mr,.pl-s1 .pl-v,.pl-s3,.pl-sc,.pl-sv {
+    color: #0086b3;
+}
+
+.pl-e,.pl-en {
+    color: #795da3;
+}
+
+.pl-s1 .pl-s2,.pl-smi,.pl-smp,.pl-stj,.pl-vo,.pl-vpf {
+    color: #333;
+}
+
+.pl-ent {
+    color: #63a35c;
+}
+
+.pl-k,.pl-s,.pl-st {
+    color: #a71d5d;
+}
+
+.pl-pds,.pl-s1,.pl-s1 .pl-pse .pl-s2,.pl-sr,.pl-sr .pl-cce,.pl-sr .pl-sra,.pl-sr .pl-sre,.pl-src,.pl-v {
+    color: #df5000;
+}
+
+.pl-id {
+    color: #b52a1d;
+}
+
+.pl-ii {
+    background-color: #b52a1d;
+    color: #f8f8f8;
+}
+
+.pl-sr .pl-cce {
+    color: #63a35c;
+    font-weight: bold;
+}
+
+.pl-ml {
+    color: #693a17;
+}
+
+.pl-mh,.pl-mh .pl-en,.pl-ms {
+    color: #1d3e81;
+    font-weight: bold;
+}
+
+.pl-mq {
+    color: #008080;
+}
+
+.pl-mi {
+    color: #333;
+    font-style: italic;
+}
+
+.pl-mb {
+    color: #333;
+    font-weight: bold;
+}
+
+.pl-md,.pl-mdhf {
+    background-color: #ffecec;
+    color: #bd2c00;
+}
+
+.pl-mdht,.pl-mi1 {
+    background-color: #eaffea;
+    color: #55a532;
+}
+
+.pl-mdr {
+    color: #795da3;
+    font-weight: bold;
+}
+
+.pl-mo {
+    color: #1d3e81;
+}
+.task-list {
+padding-left:10px;
+margin-bottom:0;
+}
+
+.task-list li {
+    margin-left: 20px;
+}
+
+.task-list-item {
+list-style-type:none;
+padding-left:10px;
+}
+
+.task-list-item label {
+font-weight:400;
+}
+
+.task-list-item.enabled label {
+cursor:pointer;
+}
+
+.task-list-item+.task-list-item {
+margin-top:3px;
+}
+
+.task-list-item-checkbox {
+display:inline-block;
+margin-left:-20px;
+margin-right:3px;
+vertical-align:1px;
+}
+</style>
+</head>
+<body>
+<h1 id="-">尔古掌教-荆绮罗-系列故事</h1>
+<h2 id="-">训练场初次露面-素谨</h2>
+<p><strong>背景音</strong>-你说什么？<br><strong>背景音</strong>-愚蠢……？<br><strong>背景音</strong>-哈郎，你刚才可不是这么说的。<br><strong>背景音</strong>-那我怎么说？荆绮罗？<br><strong>背景音</strong>-三条腿的狗，两条腿的蛤蟆？<br><strong>背景音</strong>-欺人太甚！<br><strong>背景音</strong>-哈哈哈哈哈<br><strong>素谨</strong>-怎么了？<br><strong>素谨</strong>-你们的训练任务呢？<br><strong>素谨</strong>-前面是怎么回事？<br><strong>管事</strong>-师兄……<br><strong>管事</strong>-唉……还不是尔古掌教那边的三个……<br><strong>素和</strong>-师兄，前面怕是要动手了。<br><strong>素谨</strong>-快过去看看。<br><strong>素和</strong>-【大声】让一下！<br><strong>素和</strong>-【大声】快别挤了，让一下！<br><strong>背景音</strong>-我今天就跟你们拼了！别拦着我！<br><strong>背景音</strong>-喂喂，软脚虾，你这么凶干什么？<br><strong>背景音</strong>-嘴张这么大，是让我把拳头放进去吗？<br><strong>背景音</strong>-我！<br><strong>素谨</strong>-拓梦道友，手下留情。<br><strong>背景音</strong>-师兄……<br><strong>素和</strong>-AD，冷静一下。<br><strong>素和</strong>-过来个人，帮忙把人扶下去！<br><strong>拓梦</strong>-你是……<br><strong>哈郎</strong>-【小声】哥，他叫素谨，这边的头头。<br><strong>荆绮罗</strong>-【小声】素……是不是从小没肉吃啊？<br><strong>哈郎</strong>-【小声】就是，怪不得长得这么瘦。<br><strong>拓梦</strong>-素兄……<br><strong>素谨</strong>-素谨就好。<br><strong>拓梦</strong>-哈哈，素兄。<br><strong>拓梦</strong>-弟弟妹妹们从小自在惯了，别见怪。<br><strong>素谨</strong>-那倒不会。<br><strong>素谨</strong>-不过，拓梦道友……<br><strong>拓梦</strong>-还是叫我拓梦吧，我们不习惯叫道友。<br><strong>素谨</strong>-也好。不如我们去旁边接着说？<br><strong>素谨</strong>-毕竟师兄弟还有功课要做。<br><strong>拓梦</strong>-成啊，你带路。<br><strong>素谨</strong>-【小声】素和，AD情况怎么样？<br><strong>素和</strong>-【小声】皮肉伤而已，倒也没什么大事。就是得养几天。<br><strong>哈郎</strong>-哥，他们就这点水平，还做什么功课啊？<br><strong>荆绮罗</strong>-哈郎，你也不是生下来就这么大块头。再软弱的汉子，努力练习也能变强。<br><strong>素和</strong>-【小声】师兄，他们张嘴也太臭了……<br><strong>素谨</strong>-……<br><strong>素谨</strong>-拓梦，有话我就直说了。<br><strong>拓梦</strong>-说吧，我们听着呢。<br><strong>素谨</strong>-三位，三番五次来训练场重手伤人，究竟是什么目的？<br><strong>拓梦</strong>-伤人？我们可是在打架啊，受伤很正常！<br><strong>哈郎</strong>-他打我，他力气小，我没事。<br><strong>哈郎</strong>-我打他，我力气大，他趴下了。不过是这么回事嘛！<br><strong>素谨</strong>-我是说，大家虽然不是同门，但是也有情谊。相互比试，应该点到为止……<br><strong>哈郎</strong>-点到为止？<br><strong>荆绮罗</strong>-他是说我们应该留点力气，不要把人打疼了。<br><strong>哈郎</strong>-可是尔古师傅说，平时下手重，真打起来才不怕死。<br><strong>哈郎</strong>-那他们是怕死喽？<br><strong>素和</strong>-【小声】跟这帮蛮子真是说不清楚！<br><strong>拓梦</strong>-喂！北方人！不要嘀嘀咕咕的！<br><strong>素和</strong>-知不知道在我们这里，拿手指人可是很不礼貌？<br><strong>拓梦</strong>-不喜欢用手啊？那我用拳头你肯定很喜欢了吧！<br><strong>素谨</strong>-拓梦，有机会我也很想跟你切磋。<br><strong>哈郎</strong>-跟我打跟我打！我力气大！<br><strong>荆绮罗</strong>-哈郎，让素谨说话。<br><strong>素谨</strong>-谢谢。<br><strong>素谨</strong>-但是，在这之前不希望你们和我派弟子随便动手。<br><strong>拓梦</strong>-素谨，别玩这套。<br><strong>拓梦</strong>-尔古师傅带我们来，目的就是打架。<br><strong>拓梦</strong>-动手不动手，你说了不算。<br><strong>素谨</strong>-【小声】听着，我们这想跟你们练一练的人，多了去了。<br><strong>素谨</strong>-【小声】但是这几天看下来，你们也只是挑软柿子捏。<br><strong>素谨</strong>-【小声】我就想知道，有意思么？<br><strong>拓梦</strong>-哈哈哈哈哈！<br><strong>拓梦</strong>-【小声】想来打架的，都是硬茬子？<br><strong>素谨</strong>-【小声】只要你们不怕疼，要多硬有多硬。<br><strong>拓梦</strong>-哈郎，以后没有我的同意，不许打架。<br><strong>哈郎</strong>-哦，哥你说了算。<br><strong>拓梦</strong>-素谨，别让我们太无聊啊！<br><strong>素谨</strong>-三位远道而来，做主人的，肯定得照顾周全。<br><strong>哈郎</strong>-他什么意思啊？<br><strong>荆绮罗</strong>-他是说，下次打架你就有好对手了。<br><strong>哈郎</strong>-好对手？我不相信。<br><strong>拓梦</strong>-哦对了，记得找几个姑娘来。<br><strong>拓梦</strong>-我们的荆绮罗，一直想试试跟北方的姑娘们玩玩。<br><strong>素谨</strong>-三位一定不会失望。<br><strong>素和</strong>-【小声】玩玩？师姐可以跟她好好玩玩！<br><strong>拓梦</strong>-多谢！<br><strong>拓梦</strong>-走吧，咱们找地方吃点东西去！<br><strong>素和</strong>-这三个家伙，虽然都长得跟肉山一样，倒也不全是笨蛋。<br><strong>素谨</strong>-素和，别小瞧他们。<br><strong>素谨</strong>-尔古掌教手下，可没有白痴。<br><strong>素谨</strong>-好吧，那个哈郎可能是例外。<br><strong>素和</strong>-那师兄，我是不是得跟外勤首座去说一下？<br><strong>素谨</strong>-用不着。跟XMAN说一声，每天上午都过来练练手。<br><strong>素谨</strong>-他知道轻重。<br><strong>素和</strong>-啧啧，这下有意思了。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
